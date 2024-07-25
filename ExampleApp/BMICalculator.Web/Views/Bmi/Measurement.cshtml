@@ -1,0 +1,53 @@
+﻿@using BMICalculator.Model.DTO;
+
+@model MeasurementViewModel
+
+
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-action="Measurement" method="post">
+  <div class="row">
+    <label asp-for="Weight" class="col-sm-2 col-form-label col-form-label-lg">Waga</label>
+    <div class="col-sm-10">
+      <input class="form-control form-control-lg" asp-for="Weight">
+      <span asp-validation-for="Weight" class="text-danger"></span>
+    </div>
+  </div>
+
+  <div class="row">
+    <label asp-for="Height" class="col-sm-2 col-form-label col-form-label-lg">Wzrost</label>
+    <div class="col-sm-10">
+      <input asp-for="Height" class="form-control form-control-lg">
+      <span asp-validation-for="Height" class="text-danger"></span>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <label asp-for="Unit" class="col-sm-2 col-form-label col-form-label-lg">Jendostka miary</label>
+    <div class="col-sm-10">
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option value="0" selected>Metryczny</option>
+        <option value="1">Imperialny</option>
+      </select>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Pomiar</button>
+
+</form>
+
+@if (Model?.Summary != null && Model?.Bmi > 0)
+{
+    <h1>Twoje BMI: <b>@Model.Bmi</b></h1>
+    <h2>@Model.Summary</h2>
+
+    <form asp-action="SaveMes" method="post">
+      <input type="hidden" asp-for="Bmi">
+      <input type="hidden" asp-for="Summary">
+      <input type="hidden" asp-for="BmiClassification">
+
+      <button type="submit" class="btn btn-primary">Zapisz pomiar</button>
+    </form>
+}

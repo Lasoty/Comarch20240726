@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="environmentUrl" value="https://localhost:7250/" />
+    <Parameter name="user_login" value="lasoty@o2.pl" />
+    <Parameter name="user_password" value="Qwerty.1" />
+  </TestRunParameters>
+</RunSettings>

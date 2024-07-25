@@ -1,0 +1,288 @@
+{
+  "id": "883412c5-ad69-4df7-acac-dc54233cd0ed",
+  "version": "2.0",
+  "name": "BmiCalculator",
+  "url": "https://localhost:7250",
+  "tests": [{
+    "id": "36c3123a-fe76-4e2c-a6a2-26b3ea175cda",
+    "name": "LogInToApp",
+    "commands": [{
+      "id": "2c931a25-819a-4d3c-8687-a644e3b5139c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94843baf-7139-4368-b2bd-2134ff289448",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1066",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "533b2894-6c56-47c9-a97c-cde0af2fc378",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.navbar-nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Identity/Account/Login')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38f485c9-ada5-4caa-b252-888126e8ebf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=Input_Email",
+      "targets": [
+        ["id=Input_Email", "id"],
+        ["name=Input.Email", "name"],
+        ["css=#Input_Email", "css:finder"],
+        ["xpath=//input[@id='Input_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "lasoty@o2.pl"
+    }, {
+      "id": "6beef3a5-c247-4f46-b9af-7096619cd2fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=Input_Password",
+      "targets": [
+        ["id=Input_Password", "id"],
+        ["name=Input.Password", "name"],
+        ["css=#Input_Password", "css:finder"],
+        ["xpath=//input[@id='Input_Password']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Qwerty.1"
+    }, {
+      "id": "ee6f8d44-13ff-408e-8bfa-0799151ba131",
+      "comment": "",
+      "command": "click",
+      "target": "id=Input_Email",
+      "targets": [
+        ["id=Input_Email", "id"],
+        ["name=Input.Email", "name"],
+        ["css=#Input_Email", "css:finder"],
+        ["xpath=//input[@id='Input_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6aa2b786-e297-4187-be12-0b520c67c51a",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-submit",
+      "targets": [
+        ["id=login-submit", "id"],
+        ["css=#login-submit", "css:finder"],
+        ["xpath=//button[@id='login-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bd647638-10c8-4fd1-a919-4a90254916b6",
+    "name": "AddMeasurementPositivePath",
+    "commands": [{
+      "id": "b8264bef-6a90-4c77-973e-468187069a67",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d151b852-ed11-4c25-8604-e10aff73a426",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a4270c7-8b7d-4d29-83e5-bf737c65d5d3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pomiar BMI",
+      "targets": [
+        ["linkText=Pomiar BMI", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pomiar BMI')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Bmi/Measurement')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pomiar BMI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0432809-0d9f-4ca9-afe6-b1f045a63190",
+      "comment": "",
+      "command": "type",
+      "target": "id=Weight",
+      "targets": [
+        ["id=Weight", "id"],
+        ["name=Weight", "name"],
+        ["css=#Weight", "css:finder"],
+        ["xpath=//input[@id='Weight']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "10769a51-0601-481b-8a72-9bdf9c49f1b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=Height",
+      "targets": [
+        ["id=Height", "id"],
+        ["name=Height", "name"],
+        ["css=#Height", "css:finder"],
+        ["xpath=//input[@id='Height']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "180"
+    }, {
+      "id": "db41d088-7107-4672-9e85-aa059ad34dab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//main/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pomiar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc776265-ed92-46cd-928f-c11f9fa70836",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//b[contains(.,'30.86')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e33c3266-7190-49c3-878c-fa3c00b917f0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3a93aac8-3319-4b9b-ad11-11f64aea681d",
+    "name": "AddMeasurementNegativePath",
+    "commands": [{
+      "id": "2dc52905-8dd5-4170-8c86-103964dfc047",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56b4ae73-91d3-4802-b41c-aaf56257fc6e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d8a583b-7e8d-4f53-be93-65490738450f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c1699cdf-d153-4441-b508-1e73149a1f16",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pomiar BMI",
+      "targets": [
+        ["linkText=Pomiar BMI", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pomiar BMI')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Bmi/Measurement')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pomiar BMI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3d9c66f-86ed-431d-bbb1-0b56f7620452",
+      "comment": "",
+      "command": "type",
+      "target": "id=Weight",
+      "targets": [
+        ["id=Weight", "id"],
+        ["name=Weight", "name"],
+        ["css=#Weight", "css:finder"],
+        ["xpath=//input[@id='Weight']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "7f3e53be-b017-4735-93bd-eb85a6d7b70d",
+      "comment": "",
+      "command": "type",
+      "target": "id=Height",
+      "targets": [
+        ["id=Height", "id"],
+        ["name=Height", "name"],
+        ["css=#Height", "css:finder"],
+        ["xpath=//input[@id='Height']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "916ce32a-62cd-4e3a-b18c-b1e180fdc9ee",
+      "comment": "",
+      "command": "select",
+      "target": "css=.form-select",
+      "targets": [],
+      "value": "label=Imperialny"
+    }, {
+      "id": "94c4028f-55ec-424f-bd36-320370548f04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//main/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pomiar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91719e2c-4863-4dca-93f5-97411c006114",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'The field Weight must be between 1 and 400.')]",
+      "targets": [
+        ["css=.row:nth-child(1) .text-danger", "css:finder"],
+        ["xpath=//form/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'The field Weight must be between 1 and 400.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "35ffbba4-1d9c-43ba-b6ac-35999fa6db99",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["36c3123a-fe76-4e2c-a6a2-26b3ea175cda"]
+  }],
+  "urls": ["https://localhost:7250/"],
+  "plugins": []
+}

@@ -1,0 +1,53 @@
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+      <Rule Match="Any">
+        <Rule Match="All">
+          <Property Name="Project" Value="BMICalculator.Services.Tests" />
+          <Rule Match="Any">
+            <Rule Match="All">
+              <Property Name="Namespace" Value="BMICalculator.Services.Tests" />
+              <Rule Match="Any">
+                <Rule Match="All">
+                  <Property Name="Class" Value="ResultServiceTests" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="BMICalculator.Services.Tests.ResultServiceTests.SaveUnderweightResultAsyncShouldCallSaveResultAsyncOnlyOnes" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="SaveUnderweightResultAsyncShouldCallSaveResultAsyncOnlyOnes" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="BMICalculator.Services.Tests.ResultServiceTests.SetRecentOverweightResultShouldSetResultServiceState" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="SetRecentOverweightResultShouldSetResultServiceState" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+                <Rule Match="All">
+                  <Property Name="Class" Value="Tests" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="BMICalculator.Services.Tests.Tests.GetResultShouldCallCreateCalculatorOnlyOnes" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="GetResultShouldCallCreateCalculatorOnlyOnes" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="BMICalculator.Services.Tests.Tests.GetResultShouldResultUnderweightWhenWightIsToLow" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="GetResultShouldResultUnderweightWhenWightIsToLow" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+              </Rule>
+            </Rule>
+          </Rule>
+        </Rule>
+      </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
